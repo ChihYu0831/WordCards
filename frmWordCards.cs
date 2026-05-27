@@ -233,5 +233,19 @@ namespace WordCards
 
             }
         }
+
+        private void btnQuiz_Click(object sender, EventArgs e)
+        {
+            // 如果單字卡少於4張，先擋下來
+            if (_WordList.Count < 4)
+            {
+                MessageBox.Show("請至少新增 4 個單字才能進行測驗！", "提示");
+                return;
+            }
+
+            // 呼叫測驗表單，並將目前的單字清單傳過去
+            frmQuiz quizForm = new frmQuiz(_WordList);
+            quizForm.ShowDialog();
+        }
     }
 }

@@ -41,6 +41,7 @@
             this.txtPhonogram = new System.Windows.Forms.TextBox();
             this.txtWord = new System.Windows.Forms.TextBox();
             this.timPlayer = new System.Windows.Forms.Timer(this.components);
+            this.btnQuiz = new System.Windows.Forms.Button();
             this.sssWord.SuspendLayout();
             this.palMain.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picLogo)).BeginInit();
@@ -80,6 +81,7 @@
             // palMain
             // 
             this.palMain.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(242)))));
+            this.palMain.Controls.Add(this.btnQuiz);
             this.palMain.Controls.Add(this.txtHelp);
             this.palMain.Controls.Add(this.btnAutoPlay);
             this.palMain.Controls.Add(this.picLogo);
@@ -99,7 +101,7 @@
             this.txtHelp.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txtHelp.Font = new System.Drawing.Font("微軟正黑體", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
             this.txtHelp.ForeColor = System.Drawing.Color.Red;
-            this.txtHelp.Location = new System.Drawing.Point(324, 257);
+            this.txtHelp.Location = new System.Drawing.Point(325, 268);
             this.txtHelp.Multiline = true;
             this.txtHelp.Name = "txtHelp";
             this.txtHelp.Size = new System.Drawing.Size(86, 40);
@@ -111,7 +113,7 @@
             this.btnAutoPlay.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.btnAutoPlay.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(242)))));
             this.btnAutoPlay.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
-            this.btnAutoPlay.Location = new System.Drawing.Point(325, 160);
+            this.btnAutoPlay.Location = new System.Drawing.Point(326, 142);
             this.btnAutoPlay.Name = "btnAutoPlay";
             this.btnAutoPlay.Size = new System.Drawing.Size(85, 37);
             this.btnAutoPlay.TabIndex = 4;
@@ -123,7 +125,7 @@
             // 
             this.picLogo.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.picLogo.Image = global::WordCards.Properties.Resources.WordCards_Logo;
-            this.picLogo.Location = new System.Drawing.Point(324, 40);
+            this.picLogo.Location = new System.Drawing.Point(325, 25);
             this.picLogo.Name = "picLogo";
             this.picLogo.Size = new System.Drawing.Size(86, 104);
             this.picLogo.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
@@ -179,6 +181,19 @@
             this.timPlayer.Interval = 2000;
             this.timPlayer.Tick += new System.EventHandler(this.timPlayer_Tick);
             // 
+            // btnQuiz
+            // 
+            this.btnQuiz.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.btnQuiz.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(254)))), ((int)(((byte)(242)))));
+            this.btnQuiz.Font = new System.Drawing.Font("微軟正黑體", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.btnQuiz.Location = new System.Drawing.Point(325, 190);
+            this.btnQuiz.Name = "btnQuiz";
+            this.btnQuiz.Size = new System.Drawing.Size(86, 38);
+            this.btnQuiz.TabIndex = 3;
+            this.btnQuiz.Text = "Test";
+            this.btnQuiz.UseVisualStyleBackColor = false;
+            this.btnQuiz.Click += new System.EventHandler(this.btnQuiz_Click);
+            // 
             // frmWordCards
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 12F);
@@ -218,6 +233,7 @@
         private System.Windows.Forms.TextBox txtHelp;
         private System.Windows.Forms.Button btnAutoPlay;
         private System.Windows.Forms.Timer timPlayer;
+        private System.Windows.Forms.Button btnQuiz;
     }
 }
 
