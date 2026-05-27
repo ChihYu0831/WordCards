@@ -64,11 +64,13 @@
 
 範例資料內容：
 
+```
 abacus
 `abəkəs
 Sound\abacus.mp3
 <aba-=abax: 一種計算工具> + <-us: calculus 小圓石>
 一種利用小圓石幫助計算的工具
+```
 
 <img width="825" height="478" alt="image" src="https://github.com/user-attachments/assets/5ebb7836-60b0-47d5-a07a-ca26277094da" />
 
